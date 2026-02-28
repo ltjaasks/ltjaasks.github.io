@@ -11,6 +11,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+
+	<script>
+		let currentLang = "fi";
+
+		function toggleLanguage() {
+ 			const fiElements = document.querySelectorAll(".fi");
+  			const enElements = document.querySelectorAll(".en");
+
+  		if (currentLang === "fi") {
+    		fiElements.forEach(el => el.style.display = "none");
+    		enElements.forEach(el => el.style.display = "inline");
+    		currentLang = "en";
+  		} else {
+    		fiElements.forEach(el => el.style.display = "inline");
+    		enElements.forEach(el => el.style.display = "none");
+    		currentLang = "fi";
+  			}
+		}
+</script>
+
 	<body class="is-preload">
 
 		<!-- Header -->
@@ -19,6 +39,7 @@
 					<a href="#" class="image avatar"><img src="images/avatar2.jpg" alt="" /></a>
 					<h1><strong>Lauri Jääskeläinen</strong>, portfolio<br /></h1>
 					<h4>Template by <a href="http://html5up.net">HTML5 UP</a>.</h4>
+					<button onclick="toggleLanguage()">EN / FI</button>
 				</div>
 			</header>
 
@@ -30,133 +51,279 @@
 						<header class="major">
 							<h2>Lauri Jääskeläinen</h2>
 						</header>
-						<p>
-							Olen neljännen vuoden tietojärjestelmätieteen opiskelija Jyväskylän yliopistosta
-							 ja haluan työskennellä ohjelmistokehityksessä.<br />
-							 Vapaa-ajallani soitan bassoa ja kitaraa. Muita harrastuksiani ovat kuntosali, 
-							 videopelit ja äänikirjat.<br /><br />
+						<span class="fi">
+							Olen tietojärjestelmätieteen opiskelija Jyväskylän yliopistosta
+							 ja haluan työskennellä ohjelmistokehityksessä.<br /><br />
 							 Ohjelmointikokemukseni on peräisin yliopiston kursseilta ja omasta harrastuneisuudesta. 
-							 Olen nopea ja halukas oppimaan lisää ohjelmoinnista.<br /><br />
+							 Olen nopea ja halukas oppimaan lisää ohjelmoinnista. Hallitsen useita ohjelmointikieliä. Olen 
+							 tottunut ja kyvykäs lukemaan kielten ja työkalujen dokumentaatioita ottaakseni uusia työkaluja käyttön.<br /><br />
 							 Ohjelmoinnin lisäksi olen kiinnostunut tietoturvasta ja siksi tutustunut verkkosovellusten 
-							 tietoturvaan ja tehnyt siihen liittyen mm. ne Portswigger Web Security Academyn labrat, jotka on mahdollista tehdä ilman ohjelmiston 
+							 tietoturvaan ja tehnyt siihen liittyen mm. Portswigger Web Security Academyn labrat, jotka on mahdollista tehdä ilman ohjelmiston 
 							 maksullista versiota. Web Security Academyn kautta tavallisimmat verkkosovellusten 
 							 tietoturvaongelmat ja Burp Suite -ohjelmiston käyttö ovat tuttuja.
+							 <br /><br />
 							<h1>Taitoja</h1>
 							Projekteissani ja kursseilla käytettyjä kieliä:<br />
 							Javascript<br />
 							Java<br />
 							C#<br />
 							SQL
-						</p>
+						</span>
+						<span class="en">
+							I am an information systems student from Jyväskylä. I want to work in software development.
+							<br /><br />
+							My programming experience is from university courses, from my own interest in programming and 
+							developing hobby projects. I am fast learner and motivated to learn more about programming. I am
+							proficient in multiple programming languages. I am used to reading documentation of tools and languages
+							and able to understand the documentation to apply the tools in my work.
+							<br /><br />
+							I am also interested in cyber security and I have gotten familiar with web applications security.
+							Related to web application security I have completed all Portswigger Web Security Academy labs that are 
+							possible to complete without the paid version of Burp Suite. Through Web Security Academy I am familiar 
+							with all the most common threats to web applications and using Burp Suite.
+							<br /><br />
+							<h1>Skills</h1>
+							Languages used in courses and projects:<br />
+							Javascript<br />
+							Java<br />
+							C#<br />
+							SQL
+						</span>
 					</section>
 
 				<!-- Two -->
 					<section id="two">
-						<h1>Projekteja</h1>
+						<h1>
+  							<span class="fi">Projekteja</span>
+  							<span class="en">Projects</span>
+						</h1>
+						<h2>
+							<span class="fi">Esittelyprojekti</span>
+							<span class="en">Featured Project</span>
+						</h2>
+
+  						<h3>
+							<span class="fi">Unity prototyyppi</span>
+							<span class="en">Unity prototype</span>
+						</h3>
+
+  						<div class="video-container">
+    						<iframe width="560" height="315" src="https://www.youtube.com/embed/dIkq_JMOpDs" title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  						</div>
+
+  						<p>
+							<span class="fi">
+								Unityllä tehty strategiapelin prototyyppi (C#). Videolla demonstraatio pelin toiminnasta
+								ja <a href="https://github.com/ltjaasks/Strategy-game-2" target="_blank" rel="noreferrer noopener">Githubissa</a>
+								tarkka kuvaus projektista ja projektin koodi.
+							</span>
+							<span class="en">
+								Strategy game prototype made with Unity (C#). The video has a demonstration
+								of the gameplay. Description of the project and the source code on <a href="https://github.com/ltjaasks/Strategy-game-2" target="_blank" rel="noreferrer noopener">Github</a>.
+							</span>
+  						</p>
+</section>
 						<h2>Javascript</h2>
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/blogisovellus.jpg" class="image fit thumb"><img src="images/fulls/blogisovellus.jpg" alt="" /></a>
-								<h3>Blogisovellus</h3>
+								<h3>
+									<span class="fi">Blogisovellus</span>
+									<span class="en">Blog Application</span>
+								</h3>
 								<p>
-									React -sovellus, johon kirjautunut käyttäjä voi lisätä blogeja, 
-									poistaa lisäämiään blogeja ja tykätä muiden blogeista. Käyttäjät ja 
-									blogit on tallennettu MongoDB Atlas tietokantaan. Käyttäjän kirjautuminen 
-									on tehty token-pohjaisesti. Kirjautuneen käyttäjän lisäämät blogit liitetään 
-									tietokannassa automaattisesti kirjautuneeseen käyttäjään. Käyttäjä voi poistaa 
-									vain itse lisäämiään blogeja.
-									<br />
-									<a href="https://github.com/ltjaasks/FullStackOsa5" target="_blank" rel="noreferrer noopener">Frontend githubissa</a><br />
-									Backend toteutettu Node.js:llä
+									<span class="fi">
+										React -sovellus, johon kirjautunut käyttäjä voi lisätä blogeja, 
+										poistaa lisäämiään blogeja ja tykätä muiden blogeista. Käyttäjät ja 
+										blogit on tallennettu MongoDB Atlas tietokantaan. Käyttäjän kirjautuminen 
+										on tehty token-pohjaisesti. Kirjautuneen käyttäjän lisäämät blogit liitetään 
+										tietokannassa automaattisesti kirjautuneeseen käyttäjään. Käyttäjä voi poistaa 
+										vain itse lisäämiään blogeja.
+										<a href="https://github.com/ltjaasks/FullStackOsa5" target="_blank" rel="noreferrer noopener">Frontend githubissa</a><br />
+										Backend toteutettu Node.js:llä
 									<a href="https://github.com/ltjaasks/FullStackOsa4" target="_blank" rel="noreferrer noopener">Backend githubissa</a>
+									</span>
+									<span class="en">
+										React -application where a logged in user can add blogs, delete their own blogs and like 
+										on other peoples blogs. Users and blogs are stored in a MongoDB Atlas database. Log in 
+										feature is token based. Blogs by a logged-in user are automatically linked to that user
+										in the database.
+										<a href="https://github.com/ltjaasks/FullStackOsa5" target="_blank" rel="noreferrer noopener">Frontend on Github</a><br />
+									Backend done in Node.js
+									<a href="https://github.com/ltjaasks/FullStackOsa4" target="_blank" rel="noreferrer noopener">Backend on Github</a>
+									</span>
+									
+									<br />
+									
 								</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/puhelinluettelo.jpg" class="image fit thumb"><img src="images/fulls/puhelinluettelo.jpg" alt="" /></a>
-								<h3>Puhelinluettelo</h3>
+								<h3>
+									<span class="fi">Puhelinluettelo</span>
+									<span class="en">Phonebook</span>
+								</h3>
 								<p>
-									Puhelinluettelosovellus, jonka frontend on toteutettu Reactilla ja backend Node.js:llä.
-									Käyttäjä voi lisätä ja poistaa luettelosta numeroita. Sovelluksessa on filtteröintitoiminto, 
-									jolla voi hakea luettelosta nimiä. Sovelluksessa on toimiva validointi, jotta lisättävät
-									numerot ovat oikeaa muotoa. Tallennettuja tietoja säilytetään MongoDB Atlasissa.
-									<a href="https://polished-breeze-6337.fly.dev/" target="_blank" rel="noreferrer noopener">Linkki sovellukseen.</a><br />
-									<a href="https://github.com/ltjaasks/FullStackOsa3" target="_blank" rel="noreferrer noopener">Projekti githubissa</a>
+									<span class="fi">
+										Puhelinluettelosovellus, jonka frontend on toteutettu Reactilla ja backend Node.js:llä.
+										Käyttäjä voi lisätä ja poistaa luettelosta numeroita. Sovelluksessa on filtteröintitoiminto, 
+										jolla voi hakea luettelosta nimiä. Sovelluksessa on toimiva validointi, jotta lisättävät
+										numerot ovat oikeaa muotoa. Tallennettuja tietoja säilytetään MongoDB Atlasissa.
+										<a href="https://polished-breeze-6337.fly.dev/" target="_blank" rel="noreferrer noopener">Linkki sovellukseen.</a><br />
+										<a href="https://github.com/ltjaasks/FullStackOsa3" target="_blank" rel="noreferrer noopener">Projekti githubissa</a>
+									</span>
+									<span class="en">
+										Phonebook application. Frontend made with React and backend with Node.js. Users can add and delete
+										numbers from the book. The application has a filter feature to search for names. The application has 
+										functional validation to check that the numbers are of correct format. Information is stored in MongoDB Atlas.
+										<a href="https://polished-breeze-6337.fly.dev/" target="_blank" rel="noreferrer noopener">Linkki to the application.</a><br />
+										<a href="https://github.com/ltjaasks/FullStackOsa3" target="_blank" rel="noreferrer noopener">Project on Github</a>
+									</span>
 								</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/maidentiedot.jpg" class="image fit thumb"><img src="images/thumbs/maidentiedotthumb.jpg" alt="" /></a>
-								<h3>Maiden tiedot</h3>
+								<h3>
+									<span class="fi">Maiden tiedot</span>
+									<span class="en">Country information</span>
+								</h3>
 								<p>
-									Sovellus, joka hakee halutun maan tiedot maiden tietoja tarjoavasta palvelusta ja pääkaupungin 
-									säätiedotteen "Open Weather Map" palvelun apin kautta.
-									<a href="https://github.com/ltjaasks/FullstackOsa2/tree/master/maidentiedot" target="_blank" rel="noreferrer noopener">Projekti githubissa</a>
+									<span class="fi">
+										Sovellus, joka hakee halutun maan tiedot maiden tietoja tarjoavasta palvelusta 
+										ja pääkaupungin säätiedotteen "Open Weather Map" palvelun API:n kautta.
+										<a href="https://github.com/ltjaasks/FullstackOsa2/tree/master/maidentiedot" target="_blank" rel="noreferrer noopener">Projekti githubissa</a>
+									</span>
+									<span class="en">
+										The application fetches information about the requested country from a relevant
+										service and current weather of the capital from "Open Weather Map" services API.
+										<a href="https://github.com/ltjaasks/FullstackOsa2/tree/master/maidentiedot" target="_blank" rel="noreferrer noopener">Project on Github</a>
+									</span>
 								</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/olmfull.jpg" class="image fit thumb"><img src="images/thumbs/olmthumb.jpg" alt="" /></a>
 								<h3>Olm simulator</h3>
 								<p>
-									Simuloi OldSchool RuneScape -videopelissä olevaa vihollista, jotta pelaaja voi
-									harjoitella taistelussa tarvittavaa liikettä.
-									<a href="https://olmsimulator.onrender.com/" target="_blank" rel="noreferrer noopener">Projekti verkossa</a><br />
-									 <a href="https://github.com/ltjaasks/OlmSimulator" target="_blank" rel="noreferrer noopener">Projekti githubissa</a><br />
+									<span class="fi">
+										Simuloi OldSchool RuneScape -videopelissä olevaa vihollista, jotta pelaaja voi
+										harjoitella taistelua.
+										<a href="https://olmsimulator.onrender.com/" target="_blank" rel="noreferrer noopener">Projekti verkossa</a><br />
+									 	<a href="https://github.com/ltjaasks/OlmSimulator" target="_blank" rel="noreferrer noopener">Projekti githubissa</a><br />
+									</span>
+									<span class="en">
+										Simulator for an enemy in OldSchool Runescape for a player to practice on.
+										<a href="https://olmsimulator.onrender.com/" target="_blank" rel="noreferrer noopener">Project online</a><br />
+									 	<a href="https://github.com/ltjaasks/OlmSimulator" target="_blank" rel="noreferrer noopener">Project on Github</a><br />
+									</span>
 								</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<h3>React harjoitus</h3>
+								<h3>
+									<span class="fi">React harjoitus</span>
+									<span class="en">React practice app</span>
+								</h3>
 								<p>
-									Pieni harjoitus, jonka tein palauttaakseni mieleeni JavaScriptiä.
-									Testailin React sovelluksissa ilmeneviä XSS ongelmia, kuten dangerouslySetInnerHTML-metodia,
-									käyttäjän syötteen käyttämistä suoraan href-attribuutissa ja käyttäjän määrittelemien
-									propsien käyttämistä. Samalla tutustuin React routeriin.
-									 <a href="https://github.com/ltjaasks/React-harjoitus" target="_blank" rel="noreferrer noopener">Projekti githubissa</a><br />
-								</p>
+									<span class="fi">
+										Pieni harjoitus, jonka tein palauttaakseni mieleeni JavaScriptiä.
+										Testasin React sovelluksissa ilmeneviä XSS ongelmia, kuten
+										käyttäjän syötteen käyttämistä suoraan href-attribuutissa ja käyttäjän määrittelemien
+										propsien käyttämistä. Samalla tutustuin React routeriin.
+									 	<a href="https://github.com/ltjaasks/React-harjoitus" target="_blank" rel="noreferrer noopener">Projekti githubissa</a><br />
+								
+									</span>
+									<span class="en">
+										A small practice project I made remind myself of how to use JavaScript.
+										I was testing XSS problems in React applications e.g. using user input directly in 
+										a href-attribute and using user defined props. I also got familiar with React router.
+									 	<a href="https://github.com/ltjaasks/React-harjoitus" target="_blank" rel="noreferrer noopener">Project on Github</a><br />
+									</span>
+									</p>
 							</article>
 						</div>
 						<h2>Java</h2>
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/smtppalvelin.jpg" class="image fit thumb"><img src="images/fulls/smtppalvelin.jpg" alt="" /></a>
-								<h3>Sähköpostipalvelin ja eri protokollilla toimivia asiakkaita</h3>
-								<p>SMTP, POP3 ja IMAP protokollia ymmärtävä sähköpostipalvelin sekä vastaavat asiakkaat. 
-									Ohjelmassa on tarkoituksella jätetty hyödyntämättä valmiita kirjastoja, joilla toteuttaa
-									kommunikaatio asiakkaan ja palvelimen välillä. Tarkoituksena ohjelman kirjoituksessa
-									oli opetella protokollien toimintaa.
+								<h3>
+									<span class="fi">Sähköpostipalvelin ja eri protokollilla toimivia asiakkaita</span>
+									<span class="en">Email server and clients using different protocols</span>
+								</h3>
+								<p>
+									<span class="fi">
+										SMTP, POP3 ja IMAP protokollia ymmärtävä sähköpostipalvelin sekä vastaavat asiakkaat. 
+										Ohjelmassa on tarkoituksella jätetty hyödyntämättä valmiita kirjastoja, joilla toteuttaa
+										kommunikaatio asiakkaan ja palvelimen välillä. Tarkoituksena ohjelman kirjoituksessa
+										oli opetella protokollien toimintaa.
 									 <a href="https://gitlab.jyu.fi/ltjaasks/sovellusprotokollat/-/tree/master/src?ref_type=heads" target="_blank" rel="noreferrer noopener">Projekti gitlabissa</a><br />
+									</span>
+									<span class="en">
+										Email server that understands SMTP, POP3 and IMAP protocols and the corresponding clients.
+										Avoiding usage of pre made libraries for the program is intentional. The goal of the assignment
+										was to learn how the protocols work.
+									 <a href="https://gitlab.jyu.fi/ltjaasks/sovellusprotokollat/-/tree/master/src?ref_type=heads" target="_blank" rel="noreferrer noopener">Project on Github</a><br />
+									</span>
+									
 								</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/musiikkikirjasto.jpg" class="image fit thumb"><img src="images/fulls/musiikkikirjasto.jpg" alt="" /></a>
-								<h3>Musiikkikirjasto</h3>
-								<p>Yliopiston ohjelmointikurssin harjoitustyö. JavaFx kirjastosovellus.
-									 Käyttöliittymän tekemisessä käytetty Scene Builderia. Sovellus käyttää 
-									 relaatiotietokantaa artistien, albumeiden ja kappaleiden tallentamiseen.
-									 Sovelluksessa on hakutoiminto sisällön etsimiseen ja tykkäystoiminto suosikkien merkitsemiseen.
-									 <a href="https://gitlab.jyu.fi/ltjaasks/ohj2" target="_blank" rel="noreferrer noopener">Projekti gitlabissa</a><br />
-								</p>
+								<h3>
+									<span class="fi">Musiikkikirjasto</span>
+									<span class="en">Music library</span>
+								</h3>
+								<p>
+									<span class="fi">
+										Yliopiston ohjelmointikurssin harjoitustyö. JavaFx kirjastosovellus.
+									 	Käyttöliittymän tekemisessä käytetty Scene Builderia. Sovellus käyttää 
+									 	relaatiotietokantaa artistien, albumeiden ja kappaleiden tallentamiseen.
+									 	Sovelluksessa on hakutoiminto sisällön etsimiseen ja tykkäystoiminto suosikkien merkitsemiseen.
+									 	<a href="https://gitlab.jyu.fi/ltjaasks/ohj2" target="_blank" rel="noreferrer noopener">Projekti gitlabissa</a><br />
+									</span>
+									<span class="en">
+										Practice assignment of a University course. JavaFx library application. User interface made 
+										with Scene Builder. The application uses a relation database to store artists, albums and songs.
+										The application has a search feature and a like feature to mark favorites.
+										<a href="https://gitlab.jyu.fi/ltjaasks/ohj2" target="_blank" rel="noreferrer noopener">Project on Gitlab</a><br />
+									</span>
+									</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<h3>LooperPedal</h3>
 								<p>
-									Kokeilin äänitiedostojen hallintaa Javassa. Nopeasti tehty prototyyppi 
-									looper pedaalista kitaralle. Enteriä painamalla ohjelma aloittaa äänityksen, kun 
-									painan enteriä uudestaan äänitys päättyy ja tiedostoa aletaan soittaa toistuvasti.
-									Tiedostoa toistettaessa myös ohjelma toistaa myös suoraan kitaralla soitettavan äänen. 
-									Tarkoituksena on jatkaa siten että teen tämän pohjalta oman DAW:in (digital audio workstation),
-									jolla äänittää ja käsitellä audiotiedostoja.
+									<span class="fi">
+										Kokeilin äänitiedostojen hallintaa Javassa. Nopeasti tehty prototyyppi 
+										looper pedaalista kitaralle. Enteriä painamalla ohjelma aloittaa äänityksen, ja 
+										enteriä uudestaan painamalla äänitys päättyy ja tiedostoa aletaan soittaa toistuvasti.
+										Tiedostoa toistettaessa ohjelma toistaa myös suoraan kitaralla soitettavan äänen.
 									 <a href="https://github.com/ltjaasks/LooperPedal" target="_blank" rel="noreferrer noopener">Projekti githubissa</a><br />
+									</span>
+									<span class="en">
+										Project for testing managing sound files with Java. A quickly made prototype of a 
+										looper pedal for guitar. Pressing enter starts recording and pressing enter again ends the 
+										recording and the sound file starts playing on loop. While playing the looped recording the 
+										application also plays input straight from the guitar.
+									 	<a href="https://github.com/ltjaasks/LooperPedal" target="_blank" rel="noreferrer noopener">Project on Github</a><br />
+									</span>
 								</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<h3>Comparer</h3>
 								<p>
-									Tutkin usein bug bounty-ohjelmien yhteydessä sivujen GraphQL schemoja.
-									Tämän ohjelman avulla voin halutessani pyytää graphql endpointista uutta 
-									schemaa, verrata sitä vanhaan ja selvittää helposti mitä muutoksia schemaan
-									on tehty. Ohjelma ottaa parametrina tiedoston vanhasta schemasta ja uudesta schemasta, 
-									vertaa tiedostoja ja tuottaa tekstitiedoston, joka sisältää tiedon lisätyistä, poistetuista
-									ja muutetuista riveistä sekä rivinumerot, joilla muutokset ovat.
+									<span class="fi">
+										Bug bounty-ohjelmien yhteydessä tutkin sivujen GraphQL schemoja.
+										Ohjelmalla voi verrata vanhaa GraphQL schemaa uuteen pyydettyyn schemaan.
+										Ohjelma vertaa schemoja toisiinsa ja selvittää tehdyt muutokset. Ohjelma ottaa parametrina 
+										vanhan scheman tiedoston ja uuden scheman tiedoston, vertaa tiedostoja ja tuottaa tekstitiedoston, 
+										joka sisältää tiedon lisätyistä, poistetuista ja muutetuista riveistä sekä rivinumerot, joilla muutokset ovat.
 									 <a href="https://github.com/ltjaasks/Comparer/tree/master" target="_blank" rel="noreferrer noopener">Projekti githubissa</a><br />
+									</span>
+									<span class="en">
+										When looking into bug bounty programs I investigated GraphQL schemas of the webapplications.
+										This program allows comparing an old GraphQL schema to a new updated one. The program takes 
+										the old and new schemas file names as parameters, compares the files and produces a text file that 
+										contains information about added, deleted and modified lines and the line numbers where the modifications are.
+									 <a href="https://github.com/ltjaasks/Comparer/tree/master" target="_blank" rel="noreferrer noopener">Project on Github</a><br />
+									</span>
 								</p>
 							</article>
 						</div>
@@ -166,24 +333,45 @@
 								<a href="images/fulls/basstabber3.JPG" class="image fit thumb"><img src="images/fulls/basstabber3.JPG" alt="" /></a>
 								<h3>BassTabber</h3>
 								<p>
-									Keskeneräinen oma projekti. C# windows forms -sovellus, joka nauhoittaa basson soittoa ja kirjoittaa
-									soitetut äänet luettavaan muotoon "tabeiksi" nauhoitteesta. Ohjelma käyttää NAudio kirjastoa
-									äänilaitteen tunnistamiseen ja äänitiedoston tekemiseen. Tuotettua äänitiedostoa tulkitaan
-									NWaves digital signal processing kirjaston avulla ja soitetut taajuudet tallennetaan taulukkoon.
-									Ohjelma jäänyt keskeneräiseksi, koska digital signal processing osoittautui odotettua hankalammaksi
-									aiheeksi. Keskeneräisenäkin ohjelman teko oli hyvää harjoitusta uusien työkalujen dokumentaation
-									lukemisessa ja käyttöönotossa.
-									<a href="https://github.com/ltjaasks/BassTabberV2" target="_blank" rel="noreferrer noopener">Projekti githubissa</a><br />
+									<span class="fi">
+										C# windows forms -sovellus, joka nauhoittaa basson soittoa ja kirjoittaa
+										soitetut äänet luettavaan muotoon "tabeiksi" nauhoitteesta. Ohjelma käyttää NAudio kirjastoa
+										äänilaitteen tunnistamiseen ja äänitiedoston tekemiseen. Tuotettua äänitiedostoa tulkitaan
+										NWaves digital signal processing kirjaston avulla.
+										Ohjelma jäänyt keskeneräiseksi, koska digital signal processing osoittautui odotettua hankalammaksi
+										aiheeksi. Keskeneräisenäkin ohjelman teko oli hyvää harjoitusta uusien työkalujen dokumentaation
+										lukemisessa ja käyttöönotossa.
+										<a href="https://github.com/ltjaasks/BassTabberV2" target="_blank" rel="noreferrer noopener">Projekti githubissa</a><br />
+									</span>
+									<span class="en">
+										C# windows forms -application that records bass playing and writes the sounds to a 
+										"tab" in readable format. The program uses NAudio library to identify sound devices and making 
+										audio files. The produced audio file is read using NWaves digital signal processing library. The project 
+										is unfinished because digital signal processing turned out to be more challenging than I expected.
+									<a href="https://github.com/ltjaasks/BassTabberV2" target="_blank" rel="noreferrer noopener">Project on Github</a><br />
+									</span>
+									
 								</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/kiipeilypeli.JPG" class="image fit thumb"><img src="images/fulls/kiipeilypeli.JPG" alt="" /></a>
-								<h3>Kiipeilypeli</h3>
+								<h3>
+									<span class="fi">Kiipeilypeli</span>
+									<span class="en">Climbing game</span>
+								</h3>
 								<p>
-									Yliopiston ohjelmointikurssin harjoitustyö. Jyväskylän yliopiston jypeli -kirjastoa hyödyntävä 
-									C#:lla kirjoitettu peli.
-									<a href="https://gitlab.jyu.fi/ltjaasks/ohj1ht/-/blob/master/Kiipeily/Kiipeily/Fysiikkapeli.cs" target="_blank" rel="noreferrer noopener">Projekti gitlabissa</a><br />
-									<a href="https://www.youtube.com/watch?v=hccq3aoFb4s" target="_blank" rel="noreferrer noopener">Esittelyvideo</a><br />
+									<span class="fi">
+										Yliopiston ohjelmointikurssin harjoitustyö. Jyväskylän yliopiston jypeli -kirjastoa hyödyntävä 
+										C#:lla kirjoitettu peli.
+										<a href="https://gitlab.jyu.fi/ltjaasks/ohj1ht/-/blob/master/Kiipeily/Kiipeily/Fysiikkapeli.cs" target="_blank" rel="noreferrer noopener">Projekti gitlabissa</a><br />
+										<a href="https://www.youtube.com/watch?v=hccq3aoFb4s" target="_blank" rel="noreferrer noopener">Esittelyvideo</a><br />
+									</span>
+									<span class="en">
+										Practice assignment for a university course. A C# game that uses jypeli -library of University of Jyväskylä.
+										<a href="https://gitlab.jyu.fi/ltjaasks/ohj1ht/-/blob/master/Kiipeily/Kiipeily/Fysiikkapeli.cs" target="_blank" rel="noreferrer noopener">Project on Github</a><br />
+										<a href="https://www.youtube.com/watch?v=hccq3aoFb4s" target="_blank" rel="noreferrer noopener">Presentation video</a><br />
+									</span>
+									
 								</p>
 							</article>
 						</div>
@@ -191,7 +379,10 @@
 
 				<!-- Three -->
 					<section id="three">
-						<h2>Yhteystiedot</h2>
+						<h2>
+							<span class="fi">Yhteystiedot</span>
+							<span class="en">Contact</span>
+						</h2>
 						<div class="row">
 							<div class="col-4 col-12-small">
 								<ul class="labeled-icons">
